@@ -36,7 +36,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="img/logomuawhite.png" width="200" height="auto" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -55,14 +55,22 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('service')}}">Service</a>
                                 </li>
-                                
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('contact')}}">MUA's</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('contact')}}">Hair Do</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('contact')}}">Tutorials</a>
+                                </li>
                             </ul>
-                            <form class="form-inline my-2 my-lg-0" method="get" action="{{url('search')}}">
-                                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Kata Kunci" aria-label="Search">
-                                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Cari</button>
+                            <form class="form-inline my-2 my-lg-0 " method="GET" action="/contact">
+                                <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search " aria-label="Search">
+                                    {{-- <button class="btn btn-outline-light my-2 align-content-right" type="submit">Cari</button> --}}
                                 </form>
                         </div>
 
@@ -73,6 +81,7 @@
     </header>
     <!-- Header part end-->
 
+
     <!-- banner part start-->
     <section class="banner_part">
         <div class="container">
@@ -82,12 +91,12 @@
                         <div class="banner_text_iner">
                             <h5>Welcome to</h5>
                             <h1>MUAsrc</h1>
-                            <p>Anda kesulitan mencari Make Up Artist yang sesuai 
-                            dengan kriteria anda? Disini akan kami sediakan berbagai 
+                            <p>Anda kesulitan mencari Make Up Artist yang sesuai
+                            dengan kriteria anda? Disini akan kami sediakan berbagai
                             macam referensi Make Up Artist Untuk anda!</p>
                             <div class="banner_btn">
                                 <a href="/service" class="btn_1">Book Now</a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -98,6 +107,7 @@
     <!-- banner part start-->
     @yield('container')
 
+
     <!-- our_offer part start-->
     <section class="our_offer">
         <div class="container-fluid">
@@ -107,7 +117,7 @@
                         <div class="single_offer">
                             <img src="img/offer_img_1.jpg" alt="offer_img_1">
                             <div class="hover_text">
-                                <img src="img/icon/cutter.svg" alt="#">
+
                                 <h2>Natural</h2>
                                 <p>Make up natural ini tidak akan membuat wajah Anda terlihat menor</p>
                                 <a href="/contact" class="offer_btn"><span class="flaticon-slim-right"></span></a>
@@ -118,7 +128,7 @@
                         <div class="single_offer">
                             <img src="img/offer_img_2.jpg" alt="offer_img_1">
                             <div class="hover_text">
-                                <img src="img/icon/cutter.svg" alt="#">
+
                                 <h2>Bold</h2>
                                 <p>Make Up dengan warna eyeshadow bold atau eyeliner dramatis dan bibir yang <i>nude. </i></p>
                                 <a href="/contact" class="offer_btn"><span class="flaticon-slim-right"></span></a>
@@ -129,7 +139,7 @@
                         <div class="single_offer">
                             <img src="img/offer_img_3.jpg" alt="offer_img_1">
                             <div class="hover_text">
-                                <img src="img/icon/cutter.svg" alt="#">
+
                                 <h2>Soft</h2>
                                 <p>Soft make up ini cenderung kalem, dengan menggunakan warna-warna yang lembut pada eyeshadow dan bibir</p>
                                 <a href="/contact" class="offer_btn"><span class="flaticon-slim-right"></span></a>
@@ -140,7 +150,7 @@
                         <div class="single_offer">
                             <img src="img/offer_img_4.jpg" alt="offer_img_1">
                             <div class="hover_text">
-                                <img src="img/icon/cutter.svg" alt="#">
+
                                 <h2>Glass</h2>
                                 <p>Glass-skin atau Dewy make up : <br>
                                 tipe make up yang memiliki kesan glowy pada muka,<br>
@@ -156,9 +166,9 @@
     <!-- our_offer part end-->
 
 
-    
 
-    
+
+
 
     <!-- jquery plugins here-->
 

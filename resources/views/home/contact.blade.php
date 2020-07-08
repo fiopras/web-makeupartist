@@ -5,8 +5,11 @@
 @section('container')
 
 
+
 <!--::chefs_part start::-->
 <section class="artist_part">
+
+
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-7 col-lg-6 col-sm-10">

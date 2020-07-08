@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Muartis;
+use App\link;
 
 class PagesController extends Controller
 {
@@ -18,20 +19,26 @@ class PagesController extends Controller
         return view('home.about');
     }
 
-    public function contact()
+    public function contact(Request $request)
     {
-        $mua = Muartis::paginate(9);
+        // dd($request->all());
+        if ($request->has('search')) {
+            $mua = Muartis::where('nama', 'LIKE', '%' . $request->search . '%')->paginate();
+        } else {
+            // $mua = Muartis::all();
+            $mua = Muartis::paginate(9);
+        }
         return view('home.contact', compact('mua'));
     }
 
-    public function search(Request $request)
-    {
-        $mua = Muartis::when($request->q, function ($query) use ($request) {
-            $query->where('nama', 'LIKE', "%{$request->q}%")
-                ->orWhere('instagram', 'LIKE', "%{$request->q}%");
-        })->get();
-        return view('home.search', compact('mua'));
-    }
+    // public function search(Request $request)
+    // {
+    //     $mua = Muartis::when($request->q, function ($query) use ($request) {
+    //         $query->where('nama', 'LIKE', "%{$request->q}%")
+    //             ->orWhere('instagram', 'LIKE', "%{$request->q}%");
+    //     })->get();
+    //     return view('home.search', compact('mua'));
+    // }
 
     public function service()
     {

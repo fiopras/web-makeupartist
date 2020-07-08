@@ -36,7 +36,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="index.html"> <img src="img/logomuawhite.png" height="auto" width="250" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -55,9 +55,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('service')}}">Service</a>
                                 </li>
-                                
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{route('contact')}}">MUA's</a>
+                                </li>
+
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{route('contact')}}">Hair Do</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{route('contact')}}">Tutorials</a>
                                 </li>
                             </ul>
                         </div>
@@ -77,12 +85,12 @@
                         <div class="banner_text_iner">
                             <h5>Welcome to</h5>
                             <h1>MUAsrc</h1>
-                            <p>Anda kesulitan mencari Make Up Artist yang sesuai 
-                            dengan kriteria anda? Disini akan kami sediakan berbagai 
+                            <p>Anda kesulitan mencari Make Up Artist yang sesuai
+                            dengan kriteria anda? Disini akan kami sediakan berbagai
                             macam referensi Make Up Artist Untuk anda!</p>
                             <div class="banner_btn">
                                 <a href="/service" class="btn_1">Book Now</a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -93,7 +101,7 @@
     <!-- banner part start-->
     @yield('container')
 
-   
+
 
     <!-- our_offer part start-->
     <section class="our_offer">
@@ -153,9 +161,9 @@
     <!-- our_offer part end-->
 
 
-    
 
-    
+
+
 
     <!-- jquery plugins here-->
 
